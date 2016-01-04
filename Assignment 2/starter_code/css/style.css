@@ -1,0 +1,161 @@
+/*
+Project Name: Relaxr Landing Page
+Client: Relaxr
+Author: Megan Gartner
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+  width: 100%;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+#container {
+     color: white;
+     font-size: 24px;
+     line-height: 1.4;
+     font-family: open sans;
+     background: url(../images/header_bg.jpg) no-repeat;
+     height: 500px;
+}
+
+.Benefits {
+  background-color: #f0efef;
+  font-size: 13px;
+  line-height:1.4;
+  font-family: open sans;
+  font-weight: lighter;
+  color:gray;
+}
+
+.quote {
+  background: url(../images/testimonial_bg.jpg);
+  font-size: 18px;
+  line-height: 1.4px;
+  font-family: open sans;
+  color: white;
+}
+
+.Sign_up {
+  background-color:#f9e42e;
+  height:75px;
+  text-align: center;
+  padding:25px;
+  font-weight:700;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color:white;
+  font-size:9px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  margin: auto;
+  text-align: center
+}
+
+.quote {
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+blockquote {
+  padding: 125px 0 25px 0;
+  font-style:italic;
+  font-weight: lighter;
+}
+
+p.container{
+  padding:0 0 40px 0;
+}
+
+h1{
+  text-align:left;
+  width: 100%;
+  padding:30px 0 60px 20px;
+  font-size: 24px;
+  font-weight:700;
+}
+
+h1.Benefits {
+  padding:20px;
+  font-size: 20px;
+  font-weight:600;
+}
+
+h2 {
+  background-color: yellow;
+  color:black;
+  background-size: 20px;
+  padding: 10px;
+}
+
+h3 {
+  color:#f9e42e;
+  font-size: 24px;
+  font-weight:800;
+  padding:35px;
+}
+
+p.Sign_up {
+  background-color: #033048;
+  font-size:12px;
+  border-radius: 5px;
+  color: white;
+}
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+
