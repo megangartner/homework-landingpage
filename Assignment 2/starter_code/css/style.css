@@ -128,6 +128,9 @@ h1.Benefits {
   font-weight:600;
 }
 
+/*ND: so in both your html and css files, you uppercase the first words. try to follow snake convention. lowercase and underscores.
+check out the style guides I slacked out in the resources channel.*/
+
 h2 {
   background-color: yellow;
   color:black;
@@ -149,13 +152,12 @@ p.Sign_up {
   color: white;
 }
 
+ /*ND: Here's a good tutorial on buttons: http://designshack.net/articles/css/css-button-tutorial-how-to-code-buttons-in-5-simple-steps/
+ Buttons can be hard. When I encounter issues like this, I usually google around until I find something similar to what I'm trying to do,
+ then I copy/paste the code and adjust until it's about where I want it to be.*/
 
 
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
-
-
-
