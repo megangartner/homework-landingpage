@@ -1,10 +1,20 @@
 /*
+ * From Joni: Overall comments
+ * 
+ * Hi Megan!  I will be adding feedback to this file in CSS comments like this one.
+ * Overall, excellent job formattinga nd commenting your code here.  Super easy to follow.
+ * 
+ * One big thing I did notice is that none of the images are loading.  The way you are calling
+ * them in the CSS looks perfect, but there is no "images" folder in your repository. Did you 
+ * forget to commit that folder?
+ */
+
+/*
 Project Name: Relaxr Landing Page
 Client: Relaxr
 Author: Megan Gartner
 Developer @GA in NYC
 */
-
 
 /******************************************
 /* SETUP
@@ -18,7 +28,7 @@ Developer @GA in NYC
 }
 
 /* Clear fix hack */
-.clearfix:after {
+.clearfix:after { /* Nice find! */
      content: ".";
      display: block;
      clear: both;
@@ -31,6 +41,7 @@ Developer @GA in NYC
   clear: both;
 }
 
+/* Great setup of helper classes here for your floats */
 .alignright {
   float: right;
   padding: 0 0 10px 10px; /* note the padding around a right floated image */
@@ -50,6 +61,11 @@ Developer @GA in NYC
      color: white;
      font-size: 24px;
      line-height: 1.4;
+     /* 
+      * For font names with spaces, make sure you enclose them in quotes - i.e. font-family: "Open Sans";.
+      * No quotes works with most browsers, but there are some finicky ones (i.e. some versions of IE) that 
+      * will not like the lack of quotes.
+      */
      font-family: open sans;
      background: url(../images/header_bg.jpg) no-repeat;
      height: 500px;
@@ -72,6 +88,12 @@ Developer @GA in NYC
   color: white;
 }
 
+/* 
+ * I saw your comments when you submitted your project about struggling with the button styles.
+ * The styles for this container class (.Sign_up) look good, but you also need to add styles to the 
+ * <p> tag inside of this container class in order to style the button itself.  (The button is the <p> tag 
+ * here).  Those styles seem to be missing.
+*/
 .Sign_up {
   background-color:#f9e42e;
   height:75px;
@@ -142,10 +164,22 @@ h3 {
   padding:35px;
 }
 
+/* 
+ * This style block is for the <p> tag inside of the .Sign_up container, right?  If that is the case
+ * your selector is slightly off.  It should be:
+ * 
+ *    .Sign_up p
+ *
+ * This selector above says to look for a <p> tag inside a tag that has a class called "Sign_up".
+ *    i.e. <section class="Sign_up"> <p> ... </p> </section>
+ * 
+ * The selector you are using says to look for a <p> tag that has a class called "Sign_up".
+ *    i.e. <p class="Sign_up"> ... </p>
+ */
 p.Sign_up {
   background-color: #033048;
   font-size:12px;
-  border-radius: 5px;
+  border-radius: 5px; 
   color: white;
 }
 
