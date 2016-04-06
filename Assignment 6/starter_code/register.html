@@ -1,3 +1,12 @@
+<!--
+	Hi Megan!  I am including feedback on your code in inline HTML comments.
+
+	Overall, good job with this assignment!  Your form looks good and code is well formatted
+	so it makes it really easy to read.
+
+	More comments below!
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -26,6 +35,24 @@
 			</div>
 		</header>
 			<h2 class="register">Your Contact Info</h2>
+				<!--
+					A few overall comments about your form elements: 
+
+					1. Make sure you give each form field (i.e. <input>) a "name" attribute.  
+					The "name" attribute is very important, especially if you are eventually 
+					hooking up your form to a backend.  The "name" helps the backend organize 
+					all of the data from your form (so that it can eventually store it in a database).
+
+					2. Very nice use of the "placeholder" attributes!  These are great when it
+					comes to the overall usability of your form.
+
+					3. The "autofocus" attribute tells the browser which form field your cursor should
+					automatically be inside when the page loads (so that the user does not have to click
+					into any of the form fields - they can just start typing).  This attribute only needs
+					to be inside one form field element (whichever one you want your user to start in), since 
+					your cursor can only be in one place at a time.  I usually go with the first element in
+					the form, but you can pick whichever one you want.
+				-->
 				<form>
 					<label>
 						Your Name
@@ -53,6 +80,7 @@
 						<br>
 						<input type="text" autofocus placeholder="City">
 						<select name ="state" placeholder="State">
+								<!-- Very nice use of the "hidden" attribute in this first option! -->
 								<option value="" disabled selected hidden>State</option>
 								<option value="AL">Alabama</option>
 								<option value="AK">Alaska</option>
@@ -144,6 +172,7 @@
 				</form>
 		<section id="main">
 			<div class="container">
+				<!-- Your form's submit button should be inside of the <form> container tag since it is part of the form -->
 				<section id="contact">
 					<input type="submit" value="Register Now!">
 				</section>
